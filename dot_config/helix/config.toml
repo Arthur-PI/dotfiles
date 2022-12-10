@@ -1,0 +1,47 @@
+theme = "sonokai_andromeda"
+
+[editor]
+  line-number = "relative"
+  mouse = true
+  cursorline = true
+  color-modes = true
+  scrolloff = 8
+
+[editor.statusline]
+  left = ["mode", "spinner", "file-name"]
+  right = ["file-encoding", "file-line-ending", "file-type", "diagnostics", "selections", "position", "position-percentage"]
+  separator = "|"
+
+[editor.cursor-shape]
+  insert = "bar"
+  normal = "block"
+  select = "underline"
+
+[editor.file-picker]
+  hidden = false
+
+[editor.lsp]
+  display-messages = true
+
+[editor.auto-pairs]
+  '"' = '"'
+  '(' = ')'
+  '{' = '}'
+  '<' = '>'
+  '`' = '`'
+  '[' = ']'
+  "'" = "'"
+  
+[editor.indent-guides]
+  render = true
+  #character = "╎"
+
+[editor.whitespace]
+  render = "none"
+
+[editor.whitespace.characters]
+  space = "."
+  nbsp = "⍽"
+  tab = "→"
+  newline = "⏎"
+  tabpad = "."
