@@ -12,6 +12,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 # export PATH="/usr/local/sbin:$PATH"
 # export PATH="$HOME/.local/bin:$PATH"
 # export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # 42 ENV variables
 export LOGIN_42='apigeon'

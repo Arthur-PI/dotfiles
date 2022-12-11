@@ -15,3 +15,5 @@ source "$ZSH_DIR/alias.zsh"
 source "$ZSH_DIR/functions.zsh"
 
 source "$ZSH/oh-my-zsh.sh"
+
+[ -f $HOME/.cargo/env ] && source "$HOME/.cargo/env"
