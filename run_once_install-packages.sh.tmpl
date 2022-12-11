@@ -1,6 +1,17 @@
 {{ if eq .chezmoi.os "linux" -}}
 #! /bin/sh
-sudo apt install git curl wget zsh ripgrep exuberant-tags tmux
+
+install() {
+	dpkg -l $1 | grep -q ^ii && return 1
+	sudo apt -y install $1
+	return 0
+}
+
+PACKAGES="git curl wget zsh ripgrep exuberant-tags tmux"
+for PACKAGE in ${PACKAGES}; do
+	install ${PACKAGES};
+done
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
@@ -11,7 +22,16 @@ cargo install tree-sitter-cli
 
 {{ else if eq .chezmoi.os "darwin" -}}
 #! /bin/sh
-brew install wget curl zsh git neovim ripgrep sshs ctags fd tmux lazygit gdu bear bottom tree-sitter
+
+install() {
+	brew list $1 > /dev/null || brew install $1
+}
+
+FORMULAES="wget curl neovim ripgrep sshs ctags fd tmux lazygit gdu bear bottom tree-sitter"
+for FORMULAE in ${FORMULAES}; do
+	install ${FORMULAE}
+done
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"

@@ -1,16 +1,17 @@
 # All my exports
 
+# oh-my-zsh and zsh related stuff
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/zcompdump-$HOST
 export HISTFILE=$ZSH/cache/zsh_history
 
+# add directory for manual pages
 export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="/Users/arthur/Library/Python/3.10/bin:$PATH"
-export MANPATH="$HOME/tools/ripgrep/doc/man:$MANPATH"
-export FPATH="$HOME/tools/ripgrep/complete:$FPATH"
+
+# PATH
+# export PATH="/usr/local/sbin:$PATH"
+# export PATH="$HOME/.local/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 # 42 ENV variables
 export LOGIN_42='apigeon'
@@ -21,7 +22,7 @@ export LANG=en_US.UTF-8
 export LC_LANG=en_US.UTF-8
 
 # Set editor
-export EDITOR="vim"
+export EDITOR="nvim"
 
 # Quick access to int min and int max
 export INT_MIN=-2147483648

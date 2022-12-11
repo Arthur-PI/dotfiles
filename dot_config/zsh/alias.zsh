@@ -1,11 +1,16 @@
 # All my aliases
 
+# alias for 42
 alias ccf="cc -Wall -Wextra -Werror $@"
 alias norm='norminette'
+
+# config alias
 alias zshconf="vim $ZDOTDIR/.zshrc"
 alias hxconf="hx ~/.config/helix/config.toml"
-alias vi="vim"
 alias vimconf='vi ~/.config/vimrc'
+
+# shorter commands
+alias vi="vim"
 alias val="valgrind --leak-check=full --leak-kind=all --track-origins=yes"
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias genclass="/Users/arthur/Storage/cpp_class_generator/main.py"
