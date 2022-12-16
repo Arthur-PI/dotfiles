@@ -1,4 +1,5 @@
 [[language]]
   name = "c"
   auto-format = false
+  file-types = ["c", "h", "cpp", "hpp"]
   indent = {tab-width = 4, unit = "\t"}

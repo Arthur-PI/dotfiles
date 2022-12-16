@@ -2,7 +2,8 @@
 
 # alias for 42
 alias ccf="cc -Wall -Wextra -Werror $@"
-alias norm='norminette'
+alias norm="norminette"
+alias normh="norminette -R CheckDefine"
 
 # config alias
 alias zshconf="vim $ZDOTDIR/.zshrc"
