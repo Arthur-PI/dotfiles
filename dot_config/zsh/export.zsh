@@ -29,6 +29,10 @@ export EDITOR="nvim"
 export INT_MIN=-2147483648
 export INT_MAX=2147483647
 
+# PNPM
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
 if [[ `uname` == "Darwin" ]]; then
 	export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 	export PATH="/opt/homebrew/bin:$PATH"
