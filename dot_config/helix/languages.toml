@@ -3,3 +3,10 @@
   auto-format = false
   file-types = ["c", "h", "cpp", "hpp"]
   indent = {tab-width = 4, unit = "\t"}
+
+[[language]]
+  name = "rust"
+
+[language.config]
+  checkOnSave.targets = ["x86_64-pc-windows-msvc"]
+  cargo.target = "x86_64-pc-windows-msvc"
