@@ -5,12 +5,10 @@ theme = "sonokai_andromeda"
   mouse = true
   cursorline = true
   color-modes = true
-  scrolloff = 8
-
-[editor.statusline]
-  left = ["mode", "spinner", "file-name"]
-  right = ["file-encoding", "file-line-ending", "file-type", "diagnostics", "selections", "position", "position-percentage"]
-  separator = "|"
+  rulers = [80]
+  auto-info = false
+  bufferline = "multiple"
+  scrolloff = 10
 
 [editor.cursor-shape]
   insert = "bar"
@@ -44,3 +42,6 @@ theme = "sonokai_andromeda"
   tab = "→"
   newline = "⏎"
   tabpad = "."
+
+[keys.normal]
+  space = { c = ":buffer-close", C = ":buffer-close-others" }
