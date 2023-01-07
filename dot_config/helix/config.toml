@@ -1,12 +1,12 @@
-theme = "sonokai_andromeda"
+theme = "ayu_mirage"
 
 [editor]
   line-number = "relative"
   mouse = true
   cursorline = true
   color-modes = true
-  rulers = [80]
-  auto-info = false
+  rulers = [80, 100, 120]
+  completion-trigger-len = 1
   bufferline = "multiple"
   scrolloff = 10
 
@@ -21,14 +21,6 @@ theme = "sonokai_andromeda"
 [editor.lsp]
   display-messages = true
 
-[editor.auto-pairs]
-  '"' = '"'
-  '(' = ')'
-  '{' = '}'
-  '`' = '`'
-  '[' = ']'
-  "'" = "'"
-  
 [editor.indent-guides]
   render = true
   #character = "╎"
@@ -43,5 +35,8 @@ theme = "sonokai_andromeda"
   newline = "⏎"
   tabpad = "."
 
-[keys.normal]
-  space = { c = ":buffer-close", C = ":buffer-close-others" }
+[keys.normal.space]
+  c = ":buffer-close"
+  C = ":buffer-close-others"
+  q = ":quit"
+  w = ":write"

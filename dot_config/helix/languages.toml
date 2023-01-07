@@ -8,5 +8,21 @@
   name = "rust"
 
 [language.config]
-  checkOnSave.targets = ["x86_64-pc-windows-msvc"]
-  cargo.target = "x86_64-pc-windows-msvc"
+  checkOnSave.extraArgs = ["--target-dir", "target/target-rust-analyzer" ]
+  hover.actions.references.enable = true
+  lens.references.adt.enable = true
+  lens.references.enumVariant.enable = true
+  lens.references.method.enable = true
+  lens.references.trait.enable = true
+  inlayHints.bindingModeHints.enable = true
+  diagnostics.disabled = [
+      "inactive-code",
+      "inactive_code",
+      "unresolved-proc-macro",
+      "unresolved_proc_macro",
+  ]
+  lruCapacity = 256
+  workspace.symbol.search.kind = "all_symbols"
+  checkOnSave.targets = ["x86_64-pc-windows-msvc", "aarch64-apple-darwin"]
+  # cargo.target = "x86_64-pc-windows-msvc"
+  cargo.target = "aarch64-apple-darwin"
