@@ -7,7 +7,7 @@ install() {
 	return 0
 }
 
-PACKAGES="git curl wget zsh ripgrep exuberant-tags tmux npm python3 python3-pip bear"
+PACKAGES="git curl wget zsh ripgrep exuberant-tags tmux npm python3 python3-pip bear git-delta"
 for PACKAGE in ${PACKAGES}; do
 	install ${PACKAGES};
 done
@@ -31,7 +31,7 @@ install() {
 	brew list $1 > /dev/null || brew install $1
 }
 
-FORMULAES="wget curl neovim ripgrep sshs ctags fd tmux lazygit gdu bear bottom tree-sitter npm"
+FORMULAES="wget curl neovim ripgrep sshs ctags fd tmux lazygit gdu bear bottom tree-sitter npm git-delta"
 for FORMULAE in ${FORMULAES}; do
 	install ${FORMULAE}
 done
