@@ -35,6 +35,9 @@ theme = "ayu_mirage"
   newline = "⏎"
   tabpad = "."
 
+[keys.normal]
+  X = "extend_line_above"
+
 [keys.normal.space]
   c = ":buffer-close"
   C = ":buffer-close-others"

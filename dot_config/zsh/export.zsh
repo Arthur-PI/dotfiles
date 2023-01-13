@@ -23,7 +23,7 @@ export LANG=en_US.UTF-8
 export LC_LANG=en_US.UTF-8
 
 # Set editor
-export EDITOR="nvim"
+export EDITOR="hx"
 
 # Quick access to int min and int max
 export INT_MIN=-2147483648

@@ -1,0 +1,83 @@
+[color "branch"]
+  current = green
+  local = yellow
+  remote = red
+
+[color "diff"]
+  frag = magenta
+  meta = yellow
+  new = green
+  old = red
+
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+
+[core]
+  editor = hx
+  excludesfile = ~/.config/git/global_ignore
+  pager = delta --side-by-side
+
+[delta]
+  features = line-numbers decorations
+  line-numbers = true
+  minus-style = syntax "#3f0001"
+  plus-emph-style = syntax "#005600"
+  plus-style = syntax "#002300"
+  # side-by-side = true
+  navigate = true
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = cyan box ul
+
+[delta "line-numbers"]
+  line-numbers-left-style = cyan
+  line-numbers-minus-style = bold 124
+  line-numbers-plus-style = bold 28
+  line-numbers-right-style = cyan
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[fetch]
+  prune = true
+
+# [filter "media"]
+#   clean = git-media-clean %f
+#   smudge = git-media-smudge %f
+
+# [filter "hawser"]
+#   clean = git hawser clean %f
+#   smudge = git hawser smudge %f
+#   required = true
+
+# [filter "lfs"]
+#   clean = git-lfs clean -- %f
+#   process = git-lfs filter-process
+#   required = true
+#   smudge = git-lfs smudge -- %f
+
+[init]
+  defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only
+
+[pull]
+  rebase = true
+
+[status]
+  showUntrackedFiles = all
+
+[ui]
+  color = auto
+
+[include]
+  path = ~/.config/git/local_config
