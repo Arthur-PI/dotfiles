@@ -72,6 +72,10 @@
 
 [pull]
   rebase = true
+  default = current
+
+[push]
+  default = current
 
 [status]
   showUntrackedFiles = all

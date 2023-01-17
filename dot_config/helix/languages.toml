@@ -3,6 +3,7 @@
   auto-format = false
   file-types = ["c", "h", "cpp", "hpp"]
   indent = {tab-width = 4, unit = "\t"}
+  language-server = { command = "clangd", args = ["-header-insertion=never"] }
 
 [[language]]
   name = "rust"
@@ -17,9 +18,7 @@
   inlayHints.bindingModeHints.enable = true
   diagnostics.disabled = [
       "inactive-code",
-      "inactive_code",
       "unresolved-proc-macro",
-      "unresolved_proc_macro",
   ]
   lruCapacity = 256
   workspace.symbol.search.kind = "all_symbols"

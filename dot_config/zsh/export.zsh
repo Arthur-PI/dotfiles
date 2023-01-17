@@ -4,6 +4,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/zcompdump-$HOST
 export HISTFILE=$ZSH/cache/zsh_history
+export SPACESHIP_CONFIG="$HOME/.config/zsh/spaceship.zsh"
 
 # add directory for manual pages
 export MANPATH="/usr/local/man:$MANPATH"
@@ -13,6 +14,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 # export PATH="$HOME/.local/bin:$PATH"
 # export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/Library/Python/3.10/bin:$PATH"
 
 # 42 ENV variables
 export LOGIN_42='apigeon'
