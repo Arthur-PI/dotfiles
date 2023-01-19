@@ -1,9 +1,9 @@
-ZSH_THEME="spaceship"
+PROMPT=""
 
 plugins=(
-	colored-man-pages
 	git
-    zsh-syntax-highlighting
+	colored-man-pages
+  zsh-syntax-highlighting
 )
 
 HIST_STAMPS="dd.mm.yyyy"
@@ -15,5 +15,6 @@ source "$ZSH_DIR/alias.zsh"
 source "$ZSH_DIR/functions.zsh"
 
 source "$ZSH/oh-my-zsh.sh"
+eval "$(starship init zsh)"
 
 [ -f $HOME/.cargo/env ] && source "$HOME/.cargo/env"

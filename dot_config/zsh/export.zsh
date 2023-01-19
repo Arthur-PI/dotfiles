@@ -4,7 +4,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/zcompdump-$HOST
 export HISTFILE=$ZSH/cache/zsh_history
-export SPACESHIP_CONFIG="$HOME/.config/zsh/spaceship.zsh"
 
 # add directory for manual pages
 export MANPATH="/usr/local/man:$MANPATH"
