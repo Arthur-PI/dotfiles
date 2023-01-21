@@ -25,3 +25,31 @@ fi
 if [ `uname` != 'Darwin' ]; then
 	alias ipall="ip -br -c a"
 fi
+
+# Cargo alias
+alias co=cargo
+alias cr='cargo run'
+alias crr='cargo run --release'
+alias crq='cargo run --quiet'
+alias cl='cargo clean'
+alias ccl='cargo clippy'
+alias cb='cargo build'
+alias cbr='cargo build --release'
+alias ct='cargo test'
+alias ca='cargo add'
+alias ci='cargo install'
+alias cfi='cargo fix'
+alias cf='cargo fmt'
+alias cfe='cargo fetch'
+alias cpa='cargo package'
+alias cs='cargo search'
+
+# Makefile alias
+alias m='make'
+alias ma='make all'
+alias mf='make -j8'
+alias mre='make re'
+alias mc='make clean'
+alias mfc='make fclean'
+alias mr='make run'
+alias mt='make test'
