@@ -10,8 +10,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 # PATH
 # export PATH="/usr/local/sbin:$PATH"
-# export PATH="$HOME/.local/bin:$PATH"
-# export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/Library/Python/3.10/bin:$PATH"
 
@@ -33,6 +33,9 @@ export INT_MAX=2147483647
 # PNPM
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# lazygit config fir
+export XDG_CONFIG_HOME="$HOME/.config"
 
 if [[ `uname` == "Darwin" ]]; then
 	export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"

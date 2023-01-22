@@ -17,4 +17,4 @@ source "$ZSH_DIR/functions.zsh"
 source "$ZSH/oh-my-zsh.sh"
 eval "$(starship init zsh)"
 
-[ -f $HOME/.cargo/env ] && source "$HOME/.cargo/env"
+[ -f $HOME/.config/zsh/local.zsh ] && source "$HOME/.config/zsh/local.zsh"
