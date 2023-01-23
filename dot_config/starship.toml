@@ -28,12 +28,12 @@ $memory_usage\
 $env_var\
 $custom\
 $sudo\
+$status\
 $cmd_duration\
 $line_break\
 $jobs\
 $battery\
 $time\
-$status\
 $os\
 $container\
 $shell\
@@ -44,3 +44,6 @@ $character"""
   success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
   error_symbol = '[➜](bold red)'
 
+[status]
+  disabled = false
+  format = '\[[$status]($style)\] '
