@@ -13,7 +13,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/Library/Python/3.10/bin:$PATH"
+# export PATH="$HOME/Library/Python/3.10/bin:$PATH"
 
 # 42 ENV variables
 export LOGIN_42='apigeon'
@@ -38,7 +38,7 @@ export PATH="$PNPM_HOME:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 if [[ `uname` == "Darwin" ]]; then
-	export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+	# export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 	export PATH="/opt/homebrew/bin:$PATH"
 	export PATH="/opt/homebrew/sbin:$PATH"
 	export CPATH="$CPATH:/opt/homebrew/opt/readline/include"
