@@ -8,13 +8,6 @@ export HISTFILE=$ZSH/cache/zsh_history
 # add directory for manual pages
 export MANPATH="/usr/local/man:$MANPATH"
 
-# PATH
-# export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-# export PATH="$HOME/Library/Python/3.10/bin:$PATH"
-
 # 42 ENV variables
 export LOGIN_42='apigeon'
 export MAIL_42="$LOGIN_42@student.42.fr"
@@ -37,6 +30,9 @@ export PATH="$PNPM_HOME:$PATH"
 # lazygit config fir
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 if [[ `uname` == "Darwin" ]]; then
 	# export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 	export PATH="/opt/homebrew/bin:$PATH"
@@ -44,3 +40,9 @@ if [[ `uname` == "Darwin" ]]; then
 	export CPATH="$CPATH:/opt/homebrew/opt/readline/include"
 	export LIBRARY_PATH="/opt/homebrew/opt/readline/lib"
 fi
+
+# export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+# export PATH="$HOME/Library/Python/3.10/bin:$PATH"
+

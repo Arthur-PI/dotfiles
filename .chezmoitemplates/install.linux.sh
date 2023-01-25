@@ -7,6 +7,7 @@ install() {
 	return 0
 }
 
+echo "Installing APT packages:"
 # List of apt packages to install
 APT_PACKAGES="git curl wget zsh exuberant-tags tmux npm python3 python3-pip bear gdu lazygit"
 # Loop to install all wanted packages

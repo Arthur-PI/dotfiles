@@ -1,0 +1,15 @@
+#! /bin/bash
+
+echo "Installing default tools"
+
+{{ if eq .chezmoi.os "linux" -}}
+
+{{ template "install.linux.sh" }}
+
+{{ else if eq .chezmoi.os "darwin" -}}
+
+{{ template "install.mac.sh" }}
+
+{{ end -}}
+
+{{ template "install.global.sh" }}

@@ -47,3 +47,6 @@ $character"""
 [status]
   disabled = false
   format = '\[[$status]($style)\] '
+
+[sudo]
+  disabled = false

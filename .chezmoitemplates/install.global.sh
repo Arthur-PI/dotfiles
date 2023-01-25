@@ -2,11 +2,13 @@
 
 # Install Oh my zsh
 if [ ! -d $HOME/.oh-my-zsh ]; then
+	echo "Installing Oh my zsh"
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 # Install zsh syntax highlighting plugin
 if [ ! -d $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
+	echo "Installing zsh syntax highlighting plugin"
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 fi
 
@@ -19,7 +21,8 @@ fi
 source "$HOME/.cargo/env"
 
 # List of cargo packages to install
-CARGO_PACKAGES="fd-find rm-improved git-delta ripgrep bottom tree-sitter-cli bat starship gitui loc topgrade hexyl"
+CARGO_PACKAGES="fd-find rm-improved git-delta ripgrep bottom tree-sitter-cli bat starship gitui loc topgrade hexyl tealdeer"
 
 # Install all wanted cargo packages
+echo "Installing cargo packages"
 cargo install $CARGO_PACKAGES

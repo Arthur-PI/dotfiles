@@ -7,6 +7,7 @@ install() {
   return 0
 }
 
+echo "Installing Homebrew packages:"
 # List of homebrew packages to install
 BREW_PACKAGES="git wget curl zsh ctags tmux npm python3 python3-pip bear lazygit gdu sshs neovim"
 # Loop to install all wanted packages
