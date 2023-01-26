@@ -11,6 +11,6 @@ echo "Installing APT packages:"
 # List of apt packages to install
 APT_PACKAGES="git curl wget zsh exuberant-tags tmux npm python3 python3-pip bear gdu lazygit build-essential"
 # Loop to install all wanted packages
-for PACKAGE in ${APT_PACKAGES}; do
-	install ${APT_PACKAGES};
+for PACKAGE in $APT_PACKAGES; do
+	install $PACKAGE;
 done
