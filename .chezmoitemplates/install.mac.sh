@@ -11,6 +11,6 @@ echo "Installing Homebrew packages:"
 # List of homebrew packages to install
 BREW_PACKAGES="git wget curl zsh ctags tmux npm python3 python3-pip bear lazygit gdu sshs neovim"
 # Loop to install all wanted packages
-for PACKAGE in ${BREW_PACKAGES}; do
-  install ${BREW_PACKAGES};
+for PACKAGE in $BREW_PACKAGES; do
+  install $PACKAGE;
 done
