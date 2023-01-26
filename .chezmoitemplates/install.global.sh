@@ -23,7 +23,7 @@ fi
 source "$HOME/.cargo/env"
 
 # List of cargo packages to install
-CARGO_PACKAGES="fd-find rm-improved git-delta ripgrep bottom tree-sitter-cli bat starship gitui loc topgrade hexyl tealdeer"
+CARGO_PACKAGES="fd-find rm-improved git-delta ripgrep bottom tree-sitter-cli bat starship gitui loc topgrade hexyl tealdeer cargo-update"
 
 # Install all wanted cargo packages
 echo "Installing cargo packages"
