@@ -17,6 +17,7 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias genclass="/Users/arthur/Storage/cpp_class_generator/main.py"
 alias lg="lazygit"
 alias zj="zellij"
+alias rust-analyzer="$(rustup which rust-analyzer)"
 
 if command -v nvim &> /dev/null; then
 	alias vim="nvim"
