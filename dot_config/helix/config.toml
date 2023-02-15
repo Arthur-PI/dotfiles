@@ -9,6 +9,7 @@ theme = "ayu_mirage"
   completion-trigger-len = 1
   bufferline = "always"
   scrolloff = 10
+  idle-timeout = 8
 
 [editor.cursor-shape]
   insert = "bar"
