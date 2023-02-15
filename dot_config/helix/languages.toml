@@ -2,7 +2,7 @@
   name = "c"
   auto-format = false
   file-types = ["c", "h", "cpp", "hpp"]
-  indent = {tab-width = 4, unit = "\t"}
+  indent = { tab-width = 4, unit = "\t" }
   language-server = { command = "clangd", args = ["-header-insertion=never"] }
 
 [[language]]
@@ -26,3 +26,7 @@
   # checkOnSave.targets = ["x86_64-pc-windows-msvc", "aarch64-apple-darwin"]
   # cargo.target = "x86_64-pc-windows-msvc"
   # cargo.target = "aarch64-apple-darwin"
+
+[[language]]
+  name = "json"
+  indent = { tab-width = 4, unit = "    " }

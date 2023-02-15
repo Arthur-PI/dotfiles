@@ -3,7 +3,7 @@ PROMPT=""
 plugins=(
 	git
 	colored-man-pages
-  zsh-syntax-highlighting
+	zsh-syntax-highlighting
 )
 
 HIST_STAMPS="dd.mm.yyyy"

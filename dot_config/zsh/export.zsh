@@ -30,6 +30,10 @@ export PATH="$PNPM_HOME:$PATH"
 # lazygit config fir
 export XDG_CONFIG_HOME="$HOME/.config"
 
+if [[ -v SSH_CLIENT ]]; then
+	export COLORTERM=truecolor
+fi
+
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
 
