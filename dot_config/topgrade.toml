@@ -2,7 +2,7 @@
 assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["containers", "chezmoi"]
+disable = ["containers", "chezmoi", "system"]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
@@ -47,10 +47,9 @@ skip_notify = false
 [git]
 #max_concurrency = 5
 # Additional git repositories to pull
-#repos = [
-#    "~/src/*/",
-#    "~/.config/something"
-#]
+repos = [
+    "~/Storage/repos/helix"
+]
 
 # Don't pull the predefined git repos
 #pull_predefined = false
@@ -68,6 +67,13 @@ skip_notify = false
 # Custom commands
 [commands]
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
+"Update Helix" = """
+  cd ~/Storage/repos/helix
+  cargo install --force --locked --path helix-term
+  hx --grammar fetch
+  hx --grammar build
+  rm -rf target
+"""
 
 [brew]
 #greedy_cask = true
