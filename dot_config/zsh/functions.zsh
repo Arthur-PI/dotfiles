@@ -154,3 +154,21 @@ function keygen() {
   echo '\nYour new public key:'
   cat "$FILENAME.pub"
 }
+
+function vm() {
+	local function usage() {
+		echo "Usage: vm <start|stop> <vm_name>"
+		echo "       vm list"
+	}
+	if [ $# -ge 3 ]; then
+		usage()
+		return 1
+	fi
+	if [ $# == 1 ]; then
+		if [ $1 != 'list' ]; then
+			usage()
+			return 1
+		fi
+		
+	fi
+}

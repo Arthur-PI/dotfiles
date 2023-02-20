@@ -1,9 +1,14 @@
 [[language]]
   name = "c"
   auto-format = false
-  file-types = ["c", "h", "cpp", "hpp"]
+  file-types = ["c", "h"]
   indent = { tab-width = 4, unit = "\t" }
   language-server = { command = "clangd", args = ["-header-insertion=never"] }
+
+[[language]]
+  name = "cpp"
+  auto-format = false
+  indent = { tab-width = 4, unit = "\t" }
 
 [[language]]
   name = "rust"

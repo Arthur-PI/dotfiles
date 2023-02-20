@@ -26,6 +26,12 @@ if [ `uname` != 'Darwin' ]; then
 	alias ipall="ip -br -c a"
 fi
 
+# Editor config checker
+alias ec="editorconfig-checker"
+
+# UTM alias
+alias vm="utmctl"
+
 # Cargo alias
 alias co=cargo
 alias cr='cargo run'

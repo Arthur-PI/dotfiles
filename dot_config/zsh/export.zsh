@@ -30,6 +30,9 @@ export PATH="$PNPM_HOME:$PATH"
 # lazygit config fir
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# Volta configs
+export VOLTA_HOME="$HOME/.volta"
+
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -44,5 +47,5 @@ fi
 # export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$VOLTA_HOME/bin:$PATH"
 # export PATH="$HOME/Library/Python/3.10/bin:$PATH"
-
