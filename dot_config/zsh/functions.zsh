@@ -172,3 +172,31 @@ function vm() {
 		
 	fi
 }
+
+function cstart() {
+	if [ $# != 1 ]; then
+		echo "Usage: $0 <name>"
+		echo "\tnames: binexp/kali/valgrind"
+		return 1
+	fi
+	if [[ $1 == 'binexp' ]]; then
+		docker run --rm -v "$PWD":/chal -it --platform linux/amd64 binexp
+	elif [[ $1 == 'kali' ]]; then
+		docker run --rm -v "$PWD":/chal -it kali:latest
+	elif [[ $1 == 'valgrind' ]]; then
+		docker run --rm -v "$PWD":/work -it myvalgrind:latest
+	else
+		echo "Unknown name"
+	fi
+}
+
+function fingerprint_setup() {
+	cat /etc/pam.d/sudo > /tmp/pamd.sudo.bkup
+	echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo
+	cat /tmp/pamd.sudo.bkup >> /etc/pam.d/sudo
+}
+
+function flush_dns() {
+	sudo killall -HUP mDNSResponder
+  sudo dscacheutil -flushcache
+}

@@ -45,3 +45,6 @@ compile_commands.json
 
 # tags
 tags
+
+# Python shits
+.mypy_cache

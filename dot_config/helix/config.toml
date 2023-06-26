@@ -1,4 +1,5 @@
-theme = "ayu_mirage"
+theme = "onedark"
+# theme = "everforest_light"
 
 [editor]
   line-number = "relative"
@@ -10,7 +11,7 @@ theme = "ayu_mirage"
   completion-trigger-len = 1
   bufferline = "always"
   scrolloff = 10
-  idle-timeout = 8
+  idle-timeout = 150
 
 [editor.cursor-shape]
   insert = "bar"
@@ -48,3 +49,5 @@ theme = "ayu_mirage"
   C = ":buffer-close-others"
   q = ":quit"
   w = ":write"
+  f = "file_picker_in_current_directory"
+  F = "file_picker"

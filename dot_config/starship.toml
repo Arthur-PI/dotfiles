@@ -1,7 +1,6 @@
 add_newline = false
 
 format = """
-$line_break\
 $character\
 $username\
 $hostname\
@@ -35,6 +34,8 @@ $line_break\
 $character\
 $jobs\
 """
+
+"$schema" = 'https://starship.rs/config-schema.json'
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
