@@ -9,7 +9,7 @@ install() {
 
 echo "Installing APT packages:"
 # List of apt packages to install
-APT_PACKAGES="git curl wget zsh exuberant-ctags tmux npm python3 python3-pip bear build-essential cmake"
+APT_PACKAGES="git curl wget zsh exuberant-ctags tmux npm python3 python3-pip bear build-essential cmake pkg-config"
 # Loop to install all wanted packages
 for PACKAGE in $APT_PACKAGES; do
 	install $PACKAGE;
