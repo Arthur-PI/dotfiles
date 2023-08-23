@@ -1,3 +1,6 @@
+[language-server]
+  clangd = { command = "clangd", args = ["-j=8", "--header-insertion=never", "--background-index"] }
+
 [[language]]
   name = "cpp"
   scope = "source.cpp"
@@ -5,5 +8,9 @@
   file-types = ["cc", "hh", "c++", "cpp", "hpp", "h", "ipp", "tpp", "cxx", "hxx", "ixx", "txx", "ino", "C", "H", "cu", "cuh"]
   roots = []
   comment-token = "//"
-  language-servers = [ "clangd" ]
-  indent = { tab-width = 4, unit = "\t" }
+  language-servers = ["clangd"]
+  indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+  name = "bash"
+  indent = { tab-width = 2, unit = "\t" }

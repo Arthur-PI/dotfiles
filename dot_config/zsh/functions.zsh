@@ -184,7 +184,7 @@ function cstart() {
 	elif [[ $1 == 'kali' ]]; then
 		docker run --rm -v "$PWD":/chal -it kali:latest
 	elif [[ $1 == 'valgrind' ]]; then
-		docker run --rm -v "$PWD":/work -it myvalgrind:latest
+		docker run --rm -p 6667:6667 -v "$PWD":/work -it myvalgrind:latest
 	else
 		echo "Unknown name"
 	fi

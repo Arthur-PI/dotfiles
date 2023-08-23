@@ -18,3 +18,5 @@ source "$ZSH/oh-my-zsh.sh"
 eval "$(starship init zsh)"
 
 [ -f $HOME/.config/zsh/local.zsh ] && source "$HOME/.config/zsh/local.zsh"
+
+[ -f ~/.fzf.zsh ] && source "$HOME/.fzf.zsh"

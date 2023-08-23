@@ -1,3 +1,4 @@
+[misc]
 # Don't ask for confirmations
 assume_yes = true
 
@@ -69,10 +70,12 @@ repos = [
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 "Update Helix" = """
   cd ~/Storage/repos/helix
+  rm rust-toolchain.toml
   cargo install --force --locked --path helix-term
   hx --grammar fetch
   hx --grammar build
   rm -rf target
+  git restore rust-toolchain.toml
 """
 
 [brew]
